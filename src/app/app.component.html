@@ -1,0 +1,35 @@
+<div style="text-align:center">
+  <h2>Click for getting alert message</h2>
+  <app-alert></app-alert>
+</div>
+
+<ul style="margin-top:10%;margin-left:30%">
+  
+  <li>
+    <h2>
+      <button class="btn btn-success" (click)="getSuccessMessage()">Success</button>
+    </h2>
+  </li>
+  <li>
+    <h2>
+      <button class="btn btn-warning" (click)="getWarningMessage()">Warning</button>
+    </h2>
+  </li>
+  <li>
+    <h2>
+      <button class="btn btn-danger" (click)="getErrorMessage()">Error</button>
+    </h2>
+  </li>
+  <li>
+    <h2>
+      <button class="btn btn-info" (click)="getInfoMessage()">Info</button>
+    </h2>
+  </li>
+  <li>
+    <h2>
+      <button class="btn btn-primary" (click)="clearMessage()">Clear Message</button>
+    </h2>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
